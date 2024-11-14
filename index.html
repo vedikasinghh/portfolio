@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedika Singh - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            overflow-x: hidden;
+            line-height: 1.8;
+        }
+
+        h1, h2, h3, p {
+            margin-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Global Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Header Section */
+        header {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-out;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            animation: fadeIn 2s ease-out;
+            margin-top: 20px;
+        }
+
+        /* Navigation */
+        nav {
+            position: absolute;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: white;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #1abc9c;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 2s ease-out;
+        }
+
+        section h2 {
+            font-size: 3rem;
+            color: white;
+            margin-bottom: 30px;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        section p {
+            font-size: 1.2rem;
+            color: #bdc3c7;
+            max-width: 1000px;
+            margin: 0 auto;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Skills */
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px 0;
+            justify-items: center;
+        }
+
+        .skills-item {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .skills-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Experience & Education */
+        .experience-item, .education-item {
+            margin-bottom: 40px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .experience-item:hover, .education-item:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #34495e;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 1rem;
+            color: white;
+        }
+
+        footer a {
+            color: #1abc9c;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #3498db;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 3rem;
+            }
+
+            header p {
+                font-size: 1.2rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .skills {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            footer {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1>Vedika Singh</h1>
+            <p>Computer Science Student | Full Stack Developer | Tech Enthusiast</p>
+            <nav>
+                <a href="#summary">Summary</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#community-service">Community Service</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Summary Section -->
+    <section id="summary">
+        <h2>Professional Summary</h2>
+        <p>I am a Computer Science student passionate about technology, eager to gain real-world experience and contribute to a team. I thrive in both independent and collaborative environments, always aiming to meet deadlines and exceed expectations with my skills and enthusiasm for learning.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skills-item">
+                <h3>Programming Languages</h3>
+                <p>Python, Java, JavaScript, C++, C#, HTML/CSS</p>
+            </div>
+            <div class="skills-item">
+                <h3>Technologies</h3>
+                <p>React, Node.js, MongoDB, MySQL, Firebase, Cloud Computing</p>
+            </div>
+            <div class="skills-item">
+                <h3>Core Competencies</h3>
+                <p>Full Stack Development, Database Management, Data Visualization, AI/ML, API Integration</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Database Administrator</h3>
+            <p><strong>Bibi Health - Springfield, MO</strong> | September 2023 - Present</p>
+            <p>Optimized database performance and maintained security protocols for patient data, ensuring privacy and integrity within healthcare regulations.</p>
+        </div>
+        <div class="experience-item">
+            <h3>IT Intern</h3>
+            <p><strong>Lavner Education INC - Saint Louis, MO</strong> | June 2023 - Present</p>
+            <p>Managed IT support for camp activities, configured hardware components, and assisted in developing IT solutions for operational needs.</p>
+        </div>
+        <div class="experience-item">
+            <h3>Intern</h3>
+            <p><strong>Ascensive Technologies LLP - Delhi, India</strong> | March 2020 - May 2020</p>
+            <p>Worked on ODOO ERP platform implementation and customization using Python, honing my problem-solving and teamwork skills.</p>
+        </div>
+    </section>
+
+    <!-- Community Service Section -->
+    <section id="community-service">
+        <h2>Community Service</h2>
+        <div class="experience-item">
+            <h3>Volunteer at Divine Basic Needs</h3>
+            <p><strong>2018 - 2020</strong></p>
+            <p>Worked as a volunteer to educate children in Mathematics and English, while also organizing extracurricular activities at Divine Basic Needs NGO.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science: Computer Science</strong></p>
+        <p>Missouri State University, MO</p>
+        <p><strong>Expected Graduation:</strong> May 2025</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="experience-item">
+            <h3>Personal Finance Tracker</h3>
+            <p>Developed a full-stack app to help users track expenses, set budgets, and visualize spending trends. Technologies used: React, Node.js, MongoDB, Chart.js.</p>
+        </div>
+        <div class="experience-item">
+            <h3>To-Do List with Priority and Due Date Features</h3>
+            <p>Created a to-do list app allowing users to add tasks, set priorities, and receive reminders. Technologies used: React, Firebase.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Vedika Singh. All rights reserved. | <a href="mailto:singhvedikaaa@gmail.com">Contact Me</a></p>
+    </footer>
+
+</body>
+</html>
